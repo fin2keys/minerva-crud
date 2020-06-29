@@ -1,9 +1,19 @@
 :root {
-  --useravt: #E2E602;
+  --useravt: #e0e0e0;
+}
+#user-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #user-avatar {
   background-color: var(--useravt);
+  border: none;
   width: 128px;
   height: 128px;
-  border-radius: 50%;
+  border-radius: 40rem;
+  background-size: cover;
+  position: absolute;
 }

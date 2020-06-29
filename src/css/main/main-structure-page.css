@@ -16,8 +16,9 @@
 #page-structure-container {
   display: grid;
   grid-template-columns: 170px auto;
-  grid-template-rows: 20vh 75vh 5vh;
-  grid-template-areas: 'UA HD'
+  grid-template-rows: 3vh 17vh 75vh 5vh;
+  grid-template-areas: 'EB EB'
+                       'UA HD'
                        'AS SC'
                        'AS FT';
 }
@@ -26,13 +27,20 @@
    SC == SECTION
    FT == FOOTER
    UA == USER AVATAR*/
-
+.exit-bar {
+  background-color: var(--ascolor);
+  grid-area: EB;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .avatar-user-container {
   background-color: var(--hdcolor);
   grid-area: UA;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 .main-header-content {
   background-color: var(--hdcolor);
