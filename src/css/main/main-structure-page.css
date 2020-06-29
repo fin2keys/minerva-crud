@@ -92,3 +92,33 @@ tr.info {
   background-color: #ebebeb;
   border-radius: 4px;
 }
+.form {
+  width: 500px;
+  height: 600px;
+  background-color: tomato;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.newinput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.newinput > input {
+  width: 150%;
+  margin: 10px;
+  height: 30px;
+  border: none;
+  font-size: 1.1rem;
+}
+input#add {
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+}
