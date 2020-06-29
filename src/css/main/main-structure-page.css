@@ -16,7 +16,7 @@
 #page-structure-container {
   display: grid;
   grid-template-columns: 170px auto;
-  grid-template-rows: 3vh 17vh 75vh 5vh;
+  grid-template-rows: 3vh 15vh 77vh 5vh;
   grid-template-areas: 'EB EB'
                        'UA HD'
                        'AS SC'
@@ -33,9 +33,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  user-select: none;
 }
 .avatar-user-container {
-  background-color: var(--hdcolor);
+  background-color: var(--ascolor);
   grid-area: UA;
   display: flex;
   align-items: center;
@@ -45,10 +46,13 @@
 .main-header-content {
   background-color: var(--hdcolor);
   grid-area: HD;
+  display: flex;
 }
 .user-options-aside {
   background-color: var(--ascolor);
   grid-area: AS;
+  display: flex;
+  align-items: center;
 }
 .main-minerva-content {
   background-color: var(--sccolor);
@@ -57,4 +61,34 @@
 .next-page-options {
   background-color: var(--hdcolor);
   grid-area: FT;
+}
+#page-title-container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  user-select: none;
+}
+#title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+}
+#title > span {
+  font-size: 1.8rem;
+}
+.user-options-list {
+  height: 600px;
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+tr.info {
+  height: 40px;
+  background-color: #ebebeb;
+  border-radius: 4px;
 }

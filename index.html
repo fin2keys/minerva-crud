@@ -6,6 +6,7 @@
   <link href="src/css/main/main-structure-page.css" rel="stylesheet">
   <link href="src/css/main/main-user-inputs.css" rel="stylesheet">
   <link href="src/css/user/user-preferences.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <title>Minerva</title>
 </head>
@@ -23,10 +24,38 @@
       </div>
     </div>
     <header class="main-header-content">
+      <div id="page-title-container">
+        <div class="title-content">
+        <h1 id="title">MINERVA CRUD <span>SYSTEM 1.0</span></h1>
+        <div class="add-new-product-container">
+          <a>ADD PRODUCT</a>
+          <span class="plus-img"></span>
+        </div>
+      </div>
+        <div class="search-a-product-container">
+          <a>SEARCH A PRODUCT</a>
+          <input type="text">
+        </div>
+      </div>
     </header>
     <aside class="user-options-aside">
+      <div class="user-options-list">
+        <ul>
+          <li><span id="dash-img"></span>DASHBOARD</li>
+          <li><span id="boxes-img"></span>PRODUCTS</li>
+          <li><span id="group-img"></span>GROUPS</li>
+        </ul>
+      </div>
     </aside>
     <section class="main-minerva-content">
+      <table class="new-products-container">
+        <tr class="info">
+          <th class="type-info">NAME</th>
+          <th class="type-info">PRICE</th>
+          <th class="type-info">DISCOUNT</th>
+          <th class="type-info">ACTIONS</th>
+        </tr>
+      </table>
     </section>
     <footer class="next-page-options"></footer>
   </main>
