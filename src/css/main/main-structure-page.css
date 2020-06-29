@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --hdcolor: #501791;
+  --ascolor: #605885;
+  --sccolor: #433b67;
+}
+:root, html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+#page-structure-container {
+  display: grid;
+  grid-template-columns: 170px auto;
+  grid-template-rows: 20vh 75vh 5vh;
+  grid-template-areas: 'UA HD'
+                       'AS SC'
+                       'AS FT';
+}
+/* HD == HEADER
+   AS == ASIDE
+   SC == SECTION
+   FT == FOOTER
+   UA == USER AVATAR*/
+
+.avatar-user-container {
+  background-color: var(--hdcolor);
+  grid-area: UA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header-content {
+  background-color: var(--hdcolor);
+  grid-area: HD;
+}
+.user-options-aside {
+  background-color: var(--ascolor);
+  grid-area: AS;
+}
+.main-minerva-content {
+  background-color: var(--sccolor);
+  grid-area: SC;
+}
+.next-page-options {
+  background-color: var(--hdcolor);
+  grid-area: FT;
+}

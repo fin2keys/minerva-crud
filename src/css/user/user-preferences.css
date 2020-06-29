@@ -1,0 +1,9 @@
+:root {
+  --useravt: #E2E602;
+}
+#user-avatar {
+  background-color: var(--useravt);
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
