@@ -117,4 +117,15 @@ li {
   background-image: url(../../img/group.svg);
   background-size: cover;
   margin-right: 10px;
-} 
+}
+.delete-button {
+  background-color: #2c2c2c;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  transition: ease 250ms;
+}
+.delete-button:hover {
+  transition: ease 250ms;
+  background-color: #131313;
+}

@@ -20,6 +20,9 @@ h1 {
 p {
   margin-bottom: 30px;
 }
+h1, p, a {
+  user-select: none;
+}
 .explanation-container {
   width: 900px;
   font-size: 2rem;
