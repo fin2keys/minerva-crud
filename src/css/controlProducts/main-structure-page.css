@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 :root {
-  --hdcolor: #501791;
-  --ascolor: #605885;
-  --sccolor: #433b67;
+  --hdcolor: #212529;
+  --ascolor: #343A40;
+  --sccolor: #212529;
+  --trifcolor: #212529;
 }
 :root, html, body {
   width: 100%;
@@ -16,8 +17,8 @@
 #page-structure-container {
   display: grid;
   grid-template-columns: 170px auto;
-  grid-template-rows: 3vh 15vh 77vh 5vh;
-  grid-template-areas: 'EB EB'
+  grid-template-rows: 5vh 15vh 80vh;
+  grid-template-areas: 'UA HD'
                        'UA HD'
                        'AS SC'
                        'AS FT';
@@ -27,14 +28,6 @@
    SC == SECTION
    FT == FOOTER
    UA == USER AVATAR*/
-.exit-bar {
-  background-color: var(--ascolor);
-  grid-area: EB;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  user-select: none;
-}
 .avatar-user-container {
   background-color: var(--ascolor);
   grid-area: UA;
@@ -53,6 +46,7 @@
   grid-area: AS;
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 10px black;
 }
 .main-minerva-content {
   background-color: var(--sccolor);
@@ -81,17 +75,22 @@
   font-size: 1.8rem;
 }
 .user-options-list {
-  height: 600px;
+  height: 100%;
   width: 100%;
 }
 table {
   width: 100%;
+  border-collapse: collapse ;
 }
 tr.info {
-  height: 40px;
-  background-color: #ebebeb;
-  border-radius: 4px;
+  height: 30px;
+  background-color: var();
+  padding: 0px;
+  background-color: var(--trifcolor);
+  color: white;
+  font-family: 'Exo 2', sans-serif;
 }
+
 .form {
   width: 500px;
   height: 600px;
@@ -121,4 +120,15 @@ input#add {
   width: 50%;
   height: 40px;
   cursor: pointer;
+}
+tr.new-row {
+  color: white;
+}
+tr.new-row > th {
+  background-color: #343A40;
+  box-shadow: 0px 0px 4px black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  height: 1fr;
+  border-radius: 1px;
 }
